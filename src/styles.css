@@ -1,212 +1,809 @@
-export const schoolInfo = {
-  shortName: 'GCBHS',
-  name: {
-    bn: 'গাজীপুর ক্যান্টনমেন্ট বোর্ড হাই স্কুল',
-    en: 'Gazipur Cantonment Board High School',
-  },
-  location: {
-    bn: 'গাজীপুর, বাংলাদেশ',
-    en: 'Gazipur, Bangladesh',
-  },
-  established: 1968,
-  eiin: '108957',
-  schoolCode: '2075',
-  thanaCode: '140',
-  districtCode: '14',
-  bof: '1703',
-  reportedStudents: 1103,
-  reportedTeachers: 28,
-  reportedSections: 25,
-  governingBody: 8,
-  levels: {
-    bn: 'শিশু/প্রাক-প্রাথমিক থেকে ১০ম শ্রেণি',
-    en: 'Shishu/Pre-primary to Class 10',
-  },
-  contact: {
-    phone: '9205684 / 5808',
-    complaint: '01769044179',
-    vortiUrl: 'https://vortibd.com/',
-    vortiLabel: {
-      bn: 'অনলাইন ভর্তি / স্টুডেন্ট লগইন',
-      en: 'Online Admission / Student Login',
-    },
-  },
-};
+:root {
+  --midnight-navy: #101d32;
+  --heritage-green: #174c3c;
+  --warm-ivory: #f7f5ef;
+  --antique-gold: #b99a5b;
+  --white: #ffffff;
+  --ink: #1d2430;
+  --muted: #59657a;
+  --line: rgba(16, 29, 50, 0.12);
+  --shadow: 0 22px 60px rgba(16, 29, 50, 0.12);
+}
 
-export const schoolOverview = {
-  bn: 'গাজীপুর ক্যান্টনমেন্ট বোর্ড হাই স্কুল বাংলাদেশে শিক্ষা, নৈতিকতা, সংস্কৃতি ও নেতৃত্বের ঐতিহ্য ধরে রাখে। প্রতিষ্ঠানটি জাতীয় মানের শিক্ষামূলক পরিবেশ, সুশিক্ষিত শিক্ষকগণ ও সৃজনশীল শিখন পদ্ধতির মাধ্যমে শিক্ষার্থীদের প্রস্তুত করে।',
-  en: 'Gazipur Cantonment Board High School stands as a valued academic institution dedicated to excellence, character, and leadership. With a tradition of disciplined learning and a commitment to student growth, it continues to shape confident and responsible citizens.',
-};
+* {
+  box-sizing: border-box;
+}
 
-export const stats = [
-  { value: '1968', label: { bn: 'প্রতিষ্ঠার বছর', en: 'Established' } },
-  { value: '1,103', label: { bn: 'শিক্ষার্থী', en: 'Students' } },
-  { value: '28', label: { bn: 'শিক্ষক', en: 'Teachers' } },
-  { value: '25', label: { bn: 'বিভাগ', en: 'Sections' } },
-];
+html {
+  scroll-behavior: smooth;
+}
 
-export const timeline = [
-  { year: '1968', description: { bn: 'প্রতিষ্ঠার ভিত্তি স্থাপিত হয়।', en: 'The school was founded as a center for academic learning.' } },
-  { year: '1971', description: { bn: 'জাতীয় চেতনার প্রেক্ষাপটে শিক্ষা-সেবার প্রেক্ষাপট শক্তিশালী হয়।', en: 'The school grew within the context of national resilience and education.' } },
-  { year: '1972', description: { bn: 'সংগঠিত শিক্ষা কার্যক্রম ও প্রশাসনিক কাঠামো সম্প্রসারিত হয়।', en: 'Academic and administrative continuity was strengthened.' } },
-  { year: '1992', description: { bn: 'শিক্ষার মান ও অবকাঠামো উন্নত হয়।', en: 'Academic quality and institutional infrastructure expanded.' } },
-  { year: '1997', description: { bn: 'শিক্ষার্থীর সংখ্যা ও সুযোগ-সুবিধা বৃদ্ধি পায়।', en: 'Enrollment and campus facilities continued to expand.' } },
-  { year: '2004', description: { bn: 'পাঠদান ও পরীক্ষার মান উন্নয়নের নতুন ধারা শুরু হয়।', en: 'Educational systems and academic monitoring became more structured.' } },
-  { year: '2008', description: { bn: 'একাডেমিক ও সামাজিক অগ্রগতির নতুন মাত্রা যোগ হয়।', en: 'The institution strengthened its academic and civic role.' } },
-];
+body {
+  margin: 0;
+  font-family: 'Noto Sans Bengali', 'Hind Siliguri', 'Segoe UI', sans-serif;
+  background: var(--warm-ivory);
+  color: var(--ink);
+}
 
-export const leadership = [
-  {
-    name: { bn: 'মোঃ রফিকুল ইসলাম', en: 'Md. Rafiqul Islam' },
-    role: { bn: 'চেয়ারম্যান', en: 'Chairman' },
-    image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=800&q=80',
-  },
-  {
-    name: { bn: 'রেজাউল করিম', en: 'Rezaul Karim' },
-    role: { bn: 'সহ-চেয়ারম্যান', en: 'Co-Chairman' },
-    image: 'https://images.unsplash.com/photo-1504593811423-6dd665756598?auto=format&fit=crop&w=800&q=80',
-  },
-  {
-    name: { bn: 'সা. ম. ইকবাল', en: 'S. M. Ikbal' },
-    role: { bn: 'হেডমাস্টার', en: 'Headmaster' },
-    image: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=800&q=80',
-  },
-];
+a {
+  color: inherit;
+  text-decoration: none;
+}
 
-export const facilities = [
-  {
-    name: { bn: 'শ্রেণিকক্ষ', en: 'Classrooms' },
-    description: { bn: 'আর্দ্রতা নিয়ন্ত্রণযুক্ত, আলো-আধুনিক ও কার্যকর শ্রেণিকক্ষ।', en: 'Bright, orderly classrooms designed for effective learning and comfort.' },
-    icon: '🏫',
-  },
-  {
-    name: { bn: 'কম্পিউটার ল্যাব', en: 'Computer Lab' },
-    description: { bn: 'ডিজিটাল দক্ষতার জন্য আধুনিক কম্পিউটার শিক্ষা ব্যবস্থা।', en: 'Modern access to computers and digital literacy learning.' },
-    icon: '💻',
-  },
-  {
-    name: { bn: 'বিজ্ঞানাগার', en: 'Science Lab' },
-    description: { bn: 'বিজ্ঞান বিকাশের জন্য পরীক্ষণ ও অনুশীলনের ক্ষেত্র।', en: 'Hands-on experimentation areas for scientific learning.' },
-    icon: '🧪',
-  },
-  {
-    name: { bn: 'ক্যান্টিন', en: 'Canteen' },
-    description: { bn: 'স্বাস্থ্যকর খাবার ও কার্যকর খাওয়ার ব্যবস্থা।', en: 'Clean and accessible food service for students and staff.' },
-    icon: '🍱',
-  },
-  {
-    name: { bn: 'গ্রন্থাগার', en: 'Library' },
-    description: { bn: 'পাঠ্যবই, রেফারেন্স ও পড়ার পরিবেশ।', en: 'A learning resource space for reading and research.' },
-    icon: '📚',
-  },
-  {
-    name: { bn: 'ক্লাব', en: 'Clubs' },
-    description: { bn: 'সংগঠন, সংস্কৃতি ও নেতৃত্বের অনুশীলনের জন্য ক্লাব কার্যক্রম।', en: 'Student clubs for culture, leadership, and co-curricular growth.' },
-    icon: '🎭',
-  },
-];
+img {
+  max-width: 100%;
+  display: block;
+}
 
-export const galleryItems = [
-  { title: { bn: 'ক্যাম্পাস', en: 'Campus' }, image: 'https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&w=900&q=80' },
-  { title: { bn: 'শ্রেণিকক্ষ', en: 'Classroom' }, image: 'https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=900&q=80' },
-  { title: { bn: 'সাংস্কৃতিক অনুষ্ঠান', en: 'Cultural Event' }, image: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=900&q=80' },
-  { title: { bn: 'খেলা', en: 'Sports' }, image: 'https://images.unsplash.com/photo-1517649763962-0c623066013b?auto=format&fit=crop&w=900&q=80' },
-  { title: { bn: 'গ্রন্থাগার', en: 'Library' }, image: 'https://images.unsplash.com/photo-1513258496099-48168024aec0?auto=format&fit=crop&w=900&q=80' },
-  { title: { bn: 'সার্টিফিকেট দায়িত্ব', en: 'Achievement' }, image: 'https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=900&q=80' },
-];
+button,
+input,
+select {
+  font: inherit;
+}
 
-export const noticeCategories = [
-  { value: 'general', label: { bn: 'সাধারণ', en: 'General' } },
-  { value: 'admission', label: { bn: 'ভর্তি', en: 'Admission' } },
-  { value: 'exam', label: { bn: 'পরীক্ষা', en: 'Examination' } },
-  { value: 'event', label: { bn: 'ইভেন্ট', en: 'Event' } },
-];
+.container {
+  width: min(1200px, calc(100% - 40px));
+  margin: 0 auto;
+}
 
-export const notices = [
-  {
-    id: 'demo-notice-1',
-    title: { bn: 'ভর্তি বিজ্ঞপ্তি (ডেমো)', en: 'Admission Notice (Demo)' },
-    summary: { bn: 'ভর্তি সংক্রান্ত তথ্যের জন্য এই ডেমো নোটিশটি প্রদর্শিত হচ্ছে। এটি অফিসিয়াল বিজ্ঞপ্তি নয়।', en: 'This is a demo notice for admission-related updates. It should be replaced with official content when available.' },
-    date: '2026-11-01',
-    category: 'admission',
-    categoryLabel: { bn: 'ভর্তি', en: 'Admission' },
-    pdfUrl: '#',
-  },
-  {
-    id: 'demo-notice-2',
-    title: { bn: 'পরীক্ষা রুটিন (ডেমো)', en: 'Exam Routine (Demo)' },
-    summary: { bn: 'পরীক্ষার সময়সূচি ও প্রস্তুতি সম্পর্কিত ডেমো কনটেন্ট।', en: 'Demo content covering examination schedule and preparation details.' },
-    date: '2026-10-18',
-    category: 'exam',
-    categoryLabel: { bn: 'পরীক্ষা', en: 'Examination' },
-    pdfUrl: '#',
-  },
-  {
-    id: 'demo-notice-3',
-    title: { bn: 'স্কুল ইভেন্ট (ডেমো)', en: 'School Event (Demo)' },
-    summary: { bn: 'ইভেন্ট ও সাংস্কৃতিক কার্যক্রমের ডেমো আপডেট।', en: 'A placeholder event announcement to demonstrate the notice system.' },
-    date: '2026-10-06',
-    category: 'event',
-    categoryLabel: { bn: 'ইভেন্ট', en: 'Event' },
-    pdfUrl: '#',
-  },
-  {
-    id: 'demo-notice-4',
-    title: { bn: 'সাধারণ নোটিশ (ডেমো)', en: 'General Notice (Demo)' },
-    summary: { bn: 'অফিসিয়াল নোটিশ সামনে আসার আগে এই সাধারণ ডেমো কনটেন্ট দেখা যাবে।', en: 'General placeholder content displayed until official notices are available.' },
-    date: '2026-09-24',
-    category: 'general',
-    categoryLabel: { bn: 'সাধারণ', en: 'General' },
-    pdfUrl: '#',
-  },
-];
+.site-shell {
+  min-height: 100vh;
+  background: linear-gradient(180deg, rgba(247,245,239,0.96), rgba(247,245,239,1));
+}
 
-export const newsEvents = [
-  {
-    title: { bn: 'চলতি শিক্ষাবর্ষের কার্যক্রম শুরু', en: 'Academic Year Activities Begin' },
-    summary: { bn: 'শিক্ষাবর্ষের নতুন কার্যক্রম ও শিক্ষামূলক উদ্যোগ শুরু হয়েছে।', en: 'The academic year launches with ongoing learning initiatives and orientation.' },
-    date: '2026-11-02',
-  },
-  {
-    title: { bn: 'সাংস্কৃতিক অনুষ্ঠান', en: 'Cultural Program' },
-    summary: { bn: 'স্কুলের সাংস্কৃতিক কার্যক্রমে শিক্ষার্থীদের অংশগ্রহণের তথ্য।', en: 'Students participate in cultural events and school celebrations.' },
-    date: '2026-10-15',
-  },
-  {
-    title: { bn: 'অভিভাবক সমাবেশ', en: 'Parent Meeting' },
-    summary: { bn: 'শিক্ষা জগতে অভিভাবকদের দৃষ্টি ও মতামতের সমন্বয় সভা।', en: 'A parent engagement session aimed at strengthening communication.' },
-    date: '2026-09-28',
-  },
-  {
-    title: { bn: 'ভর্তি ও তথ্য অধিগ্রহণ', en: 'Admission and Intake Update' },
-    summary: { bn: 'ভর্তি প্রক্রিয়া, শিক্ষার্থীর তথ্য ও আবেদন সম্পর্কিত তথ্য।', en: 'A school update featuring application guidance and intake information.' },
-    date: '2026-09-10',
-  },
-];
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  background: rgba(16, 29, 50, 0.92);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
 
-export const adminModules = [
-  {
-    title: { bn: 'নোটিশ ম্যানেজমেন্ট', en: 'Notice Management' },
-    description: { bn: 'নোটিশ যোগ, সম্পাদনা, মুছে ফেলা, ডাউনলোড ও ফিল্টারিং।', en: 'Add, edit, delete, and filter notices with document attachments.' },
-  },
-  {
-    title: { bn: 'নিউজ ও ইভেন্টস', en: 'News & Events' },
-    description: { bn: 'স্কুলের সংবাদ, ইভেন্ট ও আপডেট প্রকাশ ও ব্যবস্থাপনা।', en: 'Publish and manage school updates, announcements, and event records.' },
-  },
-  {
-    title: { bn: 'শিক্ষক ও স্টাফ', en: 'Teachers & Staff' },
-    description: { bn: 'কর্মীদের ডেটা, দায়িত্ব, নিয়োগ ও বিবরণ আপডেট।', en: 'Update staff profiles, assignments, and departmental information.' },
-  },
-  {
-    title: { bn: 'ফটো গ্যালারি', en: 'Photo Gallery' },
-    description: { bn: 'স্কুলের ছবি আপলোড, সাজানো ও ক্যাটাগরি পরিচালনা।', en: 'Upload and organize school event and campus photos.' },
-  },
-  {
-    title: { bn: 'একাডেমিক তথ্য', en: 'Academic Information' },
-    description: { bn: 'শ্রেণি, রুটিন, সিলেবাস, পরীক্ষার সময়সূচি ও পরিসংখ্যান আপডেট।', en: 'Manage classes, routines, syllabus, and academic records.' },
-  },
-  {
-    title: { bn: 'ফলাফল ব্যবস্থাপনা', en: 'Result Management' },
-    description: { bn: 'ফলাফল, ভর্তি পরীক্ষার তথ্য ও পাবলিক পরীক্ষার আপডেট প্রকাশ।', en: 'Manage academic outcomes, admission results, and public exam data.' },
-  },
-];
+.nav-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  min-height: 88px;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--white);
+}
+
+.brand-mark {
+  display: grid;
+  place-items: center;
+  width: 58px;
+  height: 58px;
+  background: linear-gradient(145deg, var(--antique-gold), #dbc390);
+  color: var(--midnight-navy);
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  border-radius: 18px;
+  box-shadow: 0 12px 26px rgba(185, 154, 91, 0.35);
+}
+
+.brand-copy {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+}
+
+.brand-copy strong {
+  font-size: 0.96rem;
+  letter-spacing: 0.01em;
+}
+
+.brand-copy span {
+  opacity: 0.8;
+  font-size: 0.78rem;
+}
+
+.main-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.nav-link {
+  color: rgba(255,255,255,0.8);
+  font-size: 0.9rem;
+  padding: 10px 12px;
+  border-radius: 999px;
+  transition: 0.2s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: var(--white);
+  background: rgba(255,255,255,0.08);
+}
+
+.utility-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.language-toggle {
+  border: 1px solid rgba(255,255,255,0.15);
+  background: transparent;
+  color: var(--white);
+  padding: 8px 12px;
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+.hero-section {
+  position: relative;
+  min-height: 760px;
+  display: flex;
+  align-items: center;
+  background:
+    linear-gradient(90deg, rgba(16, 29, 50, 0.82), rgba(16, 29, 50, 0.38)),
+    url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  padding: 80px 0;
+}
+
+.hero-copy {
+  max-width: 720px;
+  color: var(--white);
+}
+
+.eyebrow {
+  margin: 0 0 16px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.8);
+  font-size: 0.8rem;
+}
+
+.hero-copy h1,
+.page-hero h1,
+.section-head h2 {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-weight: 700;
+  line-height: 1.08;
+  letter-spacing: -0.03em;
+}
+
+.hero-copy h1 {
+  font-size: clamp(2.8rem, 5vw, 5rem);
+  margin: 0 0 18px;
+}
+
+.lead {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: rgba(255,255,255,0.86);
+  max-width: 620px;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 26px;
+}
+
+.primary-button,
+.secondary-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 52px;
+  padding: 0 20px;
+  border-radius: 14px;
+  font-weight: 700;
+  transition: 0.2s ease;
+}
+
+.primary-button {
+  background: var(--antique-gold);
+  color: var(--midnight-navy);
+  box-shadow: 0 18px 30px rgba(185,154,91,0.26);
+}
+
+.secondary-button {
+  background: rgba(255,255,255,0.08);
+  color: var(--white);
+  border: 1px solid rgba(255,255,255,0.2);
+}
+
+.quick-facts {
+  list-style: none;
+  padding: 0;
+  margin: 36px 0 0;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(120px, 1fr));
+  gap: 18px;
+}
+
+.quick-facts li {
+  padding: 18px 14px;
+  border: 1px solid rgba(255,255,255,0.14);
+  border-radius: 18px;
+  background: rgba(255,255,255,0.04);
+}
+
+.quick-facts strong {
+  display: block;
+  font-size: 1.5rem;
+  color: var(--white);
+}
+
+.quick-facts span {
+  color: rgba(255,255,255,0.72);
+  font-size: 0.78rem;
+}
+
+.section-block {
+  padding: 96px 0;
+}
+
+.section-block.muted {
+  background: rgba(16, 29, 50, 0.03);
+}
+
+.section-head {
+  margin-bottom: 32px;
+}
+
+.section-head h2 {
+  margin: 0 0 10px;
+  font-size: clamp(2rem, 3vw, 3rem);
+  color: var(--midnight-navy);
+}
+
+.section-head p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 1rem;
+}
+
+.notice-grid,
+.info-grid,
+.facilities-grid,
+.gallery-grid,
+.admin-grid,
+.news-grid,
+.stats-grid,
+.leadership-grid,
+.contact-two-col,
+.contact-wrap,
+.grid-2,
+.two-col-content,
+.split-layout,
+.footer-grid {
+  display: grid;
+  gap: 28px;
+}
+
+.three-cols {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.four-cols {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.two-cols {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.grid-2,
+.two-col-content,
+.split-layout,
+.contact-wrap {
+  grid-template-columns: 1.1fr 1fr;
+}
+
+.info-card,
+.notice-card,
+.facility-card,
+.admin-card,
+.profile-card,
+.news-card,
+.contact-card,
+.stat-box,
+.admission-box {
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  box-shadow: var(--shadow);
+}
+
+.notice-card,
+.news-card,
+.info-card,
+.facility-card,
+.admin-card,
+.contact-card,
+.admission-box {
+  padding: 24px;
+}
+
+.notice-card,
+.news-card,
+.facility-card {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.notice-card h3,
+.news-card h3,
+.info-card h3,
+.facility-card h3,
+.admin-card h3,
+.contact-card h3,
+.admission-box h3 {
+  margin: 0;
+  font-size: 1.35rem;
+  color: var(--midnight-navy);
+}
+
+.notice-card p,
+.news-card p,
+.info-card p,
+.facility-card p,
+.admin-card p,
+.contact-card p,
+.admission-box p,
+.content-panel p,
+.notice-detail p,
+.detail-list,
+.check-list {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.8;
+}
+
+.tag,
+.news-date,
+.notice-meta span {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  padding: 7px 10px;
+  border-radius: 999px;
+  background: rgba(23,76,60,0.08);
+  color: var(--heritage-green);
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.notice-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: auto;
+}
+
+.notice-actions a {
+  color: var(--heritage-green);
+  font-weight: 700;
+}
+
+.image-panel img,
+.profile-image img,
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.image-panel,
+.profile-image {
+  overflow: hidden;
+  border-radius: 24px;
+}
+
+.image-panel {
+  min-height: 490px;
+  box-shadow: var(--shadow);
+}
+
+.feature-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  margin: 28px 0;
+}
+
+.feature-list div {
+  padding: 18px 16px;
+  background: rgba(16,29,50,0.03);
+  border-radius: 16px;
+}
+
+.feature-list strong,
+.detail-list strong {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--midnight-navy);
+}
+
+.leadership-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.profile-card {
+  padding: 18px;
+}
+
+.profile-image {
+  height: 260px;
+  margin-bottom: 18px;
+}
+
+.profile-card h3 {
+  margin-bottom: 6px;
+}
+
+.profile-card p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.facilities-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.facility-icon {
+  font-size: 2rem;
+}
+
+.stats-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.stat-box {
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.stat-box strong {
+  display: block;
+  color: var(--midnight-navy);
+  font-size: clamp(2rem, 3vw, 3rem);
+  margin-bottom: 6px;
+}
+
+.stat-box span {
+  color: var(--muted);
+}
+
+.gallery-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.gallery-item {
+  margin: 0;
+  overflow: hidden;
+  border-radius: 20px;
+  position: relative;
+  box-shadow: var(--shadow);
+}
+
+.gallery-item img {
+  height: 260px;
+}
+
+.gallery-item figcaption {
+  background: linear-gradient(180deg, rgba(16,29,50,0), rgba(16,29,50,0.82));
+  color: var(--white);
+  position: absolute;
+  inset: auto 0 0 0;
+  padding: 18px;
+}
+
+.contact-panel {
+  background: linear-gradient(135deg, rgba(16,29,50,0.96), rgba(23,76,60,0.9));
+  color: var(--white);
+}
+
+.contact-wrap {
+  align-items: center;
+}
+
+.contact-panel .section-head h2,
+.contact-panel .contact-list li,
+.contact-panel .contact-card h3,
+.contact-panel .contact-card p,
+.contact-panel .detail-list strong,
+.contact-panel .detail-list li {
+  color: var(--white);
+}
+
+.contact-list,
+.detail-list,
+.check-list {
+  list-style: none;
+  padding: 0;
+  margin: 18px 0 0;
+}
+
+.contact-list li,
+.detail-list li {
+  margin-bottom: 10px;
+  color: rgba(255,255,255,0.8);
+}
+
+.map-box {
+  min-height: 280px;
+  border-radius: 24px;
+  overflow: hidden;
+  background: linear-gradient(135deg, rgba(185,154,91,0.18), rgba(255,255,255,0.08));
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+.map-placeholder {
+  min-height: 280px;
+  display: grid;
+  place-items: center;
+  color: var(--white);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.page-shell {
+  padding-bottom: 72px;
+}
+
+.page-hero {
+  background: linear-gradient(135deg, var(--midnight-navy), var(--heritage-green));
+  padding: 72px 0 56px;
+}
+
+.page-hero h1 {
+  margin: 0;
+  font-size: clamp(2.2rem, 5vw, 4rem);
+  color: var(--white);
+}
+
+.timeline {
+  margin-top: 24px;
+  display: grid;
+  gap: 18px;
+}
+
+.timeline-item {
+  display: grid;
+  grid-template-columns: 90px 1fr;
+  gap: 18px;
+  background: rgba(255,255,255,0.7);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 18px 20px;
+}
+
+.timeline-item span {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 38px;
+  border-radius: 999px;
+  background: rgba(185,154,91,0.15);
+  color: var(--midnight-navy);
+  font-weight: 800;
+}
+
+.admin-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.admin-card {
+  min-height: 180px;
+}
+
+.notice-toolbar {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 32px;
+  align-items: center;
+}
+
+.notice-toolbar input,
+.notice-toolbar select,
+.demo-form input {
+  width: 100%;
+  min-height: 52px;
+  border-radius: 14px;
+  border: 1px solid var(--line);
+  background: rgba(255,255,255,0.85);
+  padding: 0 16px;
+  color: var(--ink);
+}
+
+.notice-toolbar select {
+  width: 260px;
+}
+
+.empty-state {
+  background: rgba(255,255,255,0.8);
+  border: 1px dashed var(--line);
+  border-radius: 16px;
+  padding: 28px;
+  text-align: center;
+  grid-column: 1 / -1;
+}
+
+.notice-detail {
+  background: var(--white);
+  border-radius: 24px;
+  padding: 32px;
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow);
+}
+
+.notice-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.contact-card,
+.admission-box {
+  background: rgba(255,255,255,0.9);
+}
+
+.contact-two-col {
+  grid-template-columns: 0.9fr 1.1fr;
+}
+
+.large-map,
+.map-box {
+  min-height: 360px;
+}
+
+.demo-form {
+  display: grid;
+  gap: 14px;
+  margin-top: 18px;
+}
+
+.site-footer {
+  background: var(--midnight-navy);
+  color: rgba(255,255,255,0.82);
+  padding: 60px 0 20px;
+}
+
+.footer-grid {
+  grid-template-columns: 1.2fr 0.8fr 1fr;
+  align-items: start;
+}
+
+.brand-footer {
+  margin-bottom: 16px;
+}
+
+.site-footer h3 {
+  margin: 0 0 14px;
+  color: var(--white);
+}
+
+.footer-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 8px;
+}
+
+.footer-links a,
+.footer-links li {
+  color: rgba(255,255,255,0.75);
+}
+
+.footer-bottom {
+  margin-top: 28px;
+  padding-top: 16px;
+  border-top: 1px solid rgba(255,255,255,0.08);
+  text-align: center;
+}
+
+@media (max-width: 980px) {
+  .main-nav {
+    display: none;
+  }
+
+  .three-cols,
+  .four-cols,
+  .two-cols,
+  .gallery-grid,
+  .admin-grid,
+  .leadership-grid,
+  .stats-grid,
+  .contact-wrap,
+  .two-col-content,
+  .split-layout,
+  .grid-2,
+  .footer-grid,
+  .contact-two-col {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .three-cols,
+  .four-cols,
+  .two-cols,
+  .gallery-grid,
+  .admin-grid,
+  .leadership-grid,
+  .stats-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .feature-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 680px) {
+  .nav-wrap {
+    min-height: 74px;
+  }
+
+  .hero-section {
+    min-height: 620px;
+  }
+
+  .quick-facts,
+  .three-cols,
+  .four-cols,
+  .two-cols,
+  .gallery-grid,
+  .admin-grid,
+  .leadership-grid,
+  .stats-grid,
+  .contact-wrap,
+  .two-col-content,
+  .split-layout,
+  .grid-2,
+  .footer-grid,
+  .contact-two-col,
+  .facilities-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .notice-toolbar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .notice-toolbar select {
+    width: 100%;
+  }
+
+  .hero-actions,
+  .notice-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .brand-copy strong {
+    font-size: 0.8rem;
+  }
+
+  .brand-copy span {
+    display: none;
+  }
+}
