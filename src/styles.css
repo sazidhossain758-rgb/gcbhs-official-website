@@ -1,0 +1,212 @@
+export const schoolInfo = {
+  shortName: 'GCBHS',
+  name: {
+    bn: 'গাজীপুর ক্যান্টনমেন্ট বোর্ড হাই স্কুল',
+    en: 'Gazipur Cantonment Board High School',
+  },
+  location: {
+    bn: 'গাজীপুর, বাংলাদেশ',
+    en: 'Gazipur, Bangladesh',
+  },
+  established: 1968,
+  eiin: '108957',
+  schoolCode: '2075',
+  thanaCode: '140',
+  districtCode: '14',
+  bof: '1703',
+  reportedStudents: 1103,
+  reportedTeachers: 28,
+  reportedSections: 25,
+  governingBody: 8,
+  levels: {
+    bn: 'শিশু/প্রাক-প্রাথমিক থেকে ১০ম শ্রেণি',
+    en: 'Shishu/Pre-primary to Class 10',
+  },
+  contact: {
+    phone: '9205684 / 5808',
+    complaint: '01769044179',
+    vortiUrl: 'https://vortibd.com/',
+    vortiLabel: {
+      bn: 'অনলাইন ভর্তি / স্টুডেন্ট লগইন',
+      en: 'Online Admission / Student Login',
+    },
+  },
+};
+
+export const schoolOverview = {
+  bn: 'গাজীপুর ক্যান্টনমেন্ট বোর্ড হাই স্কুল বাংলাদেশে শিক্ষা, নৈতিকতা, সংস্কৃতি ও নেতৃত্বের ঐতিহ্য ধরে রাখে। প্রতিষ্ঠানটি জাতীয় মানের শিক্ষামূলক পরিবেশ, সুশিক্ষিত শিক্ষকগণ ও সৃজনশীল শিখন পদ্ধতির মাধ্যমে শিক্ষার্থীদের প্রস্তুত করে।',
+  en: 'Gazipur Cantonment Board High School stands as a valued academic institution dedicated to excellence, character, and leadership. With a tradition of disciplined learning and a commitment to student growth, it continues to shape confident and responsible citizens.',
+};
+
+export const stats = [
+  { value: '1968', label: { bn: 'প্রতিষ্ঠার বছর', en: 'Established' } },
+  { value: '1,103', label: { bn: 'শিক্ষার্থী', en: 'Students' } },
+  { value: '28', label: { bn: 'শিক্ষক', en: 'Teachers' } },
+  { value: '25', label: { bn: 'বিভাগ', en: 'Sections' } },
+];
+
+export const timeline = [
+  { year: '1968', description: { bn: 'প্রতিষ্ঠার ভিত্তি স্থাপিত হয়।', en: 'The school was founded as a center for academic learning.' } },
+  { year: '1971', description: { bn: 'জাতীয় চেতনার প্রেক্ষাপটে শিক্ষা-সেবার প্রেক্ষাপট শক্তিশালী হয়।', en: 'The school grew within the context of national resilience and education.' } },
+  { year: '1972', description: { bn: 'সংগঠিত শিক্ষা কার্যক্রম ও প্রশাসনিক কাঠামো সম্প্রসারিত হয়।', en: 'Academic and administrative continuity was strengthened.' } },
+  { year: '1992', description: { bn: 'শিক্ষার মান ও অবকাঠামো উন্নত হয়।', en: 'Academic quality and institutional infrastructure expanded.' } },
+  { year: '1997', description: { bn: 'শিক্ষার্থীর সংখ্যা ও সুযোগ-সুবিধা বৃদ্ধি পায়।', en: 'Enrollment and campus facilities continued to expand.' } },
+  { year: '2004', description: { bn: 'পাঠদান ও পরীক্ষার মান উন্নয়নের নতুন ধারা শুরু হয়।', en: 'Educational systems and academic monitoring became more structured.' } },
+  { year: '2008', description: { bn: 'একাডেমিক ও সামাজিক অগ্রগতির নতুন মাত্রা যোগ হয়।', en: 'The institution strengthened its academic and civic role.' } },
+];
+
+export const leadership = [
+  {
+    name: { bn: 'মোঃ রফিকুল ইসলাম', en: 'Md. Rafiqul Islam' },
+    role: { bn: 'চেয়ারম্যান', en: 'Chairman' },
+    image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=800&q=80',
+  },
+  {
+    name: { bn: 'রেজাউল করিম', en: 'Rezaul Karim' },
+    role: { bn: 'সহ-চেয়ারম্যান', en: 'Co-Chairman' },
+    image: 'https://images.unsplash.com/photo-1504593811423-6dd665756598?auto=format&fit=crop&w=800&q=80',
+  },
+  {
+    name: { bn: 'সা. ম. ইকবাল', en: 'S. M. Ikbal' },
+    role: { bn: 'হেডমাস্টার', en: 'Headmaster' },
+    image: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=800&q=80',
+  },
+];
+
+export const facilities = [
+  {
+    name: { bn: 'শ্রেণিকক্ষ', en: 'Classrooms' },
+    description: { bn: 'আর্দ্রতা নিয়ন্ত্রণযুক্ত, আলো-আধুনিক ও কার্যকর শ্রেণিকক্ষ।', en: 'Bright, orderly classrooms designed for effective learning and comfort.' },
+    icon: '🏫',
+  },
+  {
+    name: { bn: 'কম্পিউটার ল্যাব', en: 'Computer Lab' },
+    description: { bn: 'ডিজিটাল দক্ষতার জন্য আধুনিক কম্পিউটার শিক্ষা ব্যবস্থা।', en: 'Modern access to computers and digital literacy learning.' },
+    icon: '💻',
+  },
+  {
+    name: { bn: 'বিজ্ঞানাগার', en: 'Science Lab' },
+    description: { bn: 'বিজ্ঞান বিকাশের জন্য পরীক্ষণ ও অনুশীলনের ক্ষেত্র।', en: 'Hands-on experimentation areas for scientific learning.' },
+    icon: '🧪',
+  },
+  {
+    name: { bn: 'ক্যান্টিন', en: 'Canteen' },
+    description: { bn: 'স্বাস্থ্যকর খাবার ও কার্যকর খাওয়ার ব্যবস্থা।', en: 'Clean and accessible food service for students and staff.' },
+    icon: '🍱',
+  },
+  {
+    name: { bn: 'গ্রন্থাগার', en: 'Library' },
+    description: { bn: 'পাঠ্যবই, রেফারেন্স ও পড়ার পরিবেশ।', en: 'A learning resource space for reading and research.' },
+    icon: '📚',
+  },
+  {
+    name: { bn: 'ক্লাব', en: 'Clubs' },
+    description: { bn: 'সংগঠন, সংস্কৃতি ও নেতৃত্বের অনুশীলনের জন্য ক্লাব কার্যক্রম।', en: 'Student clubs for culture, leadership, and co-curricular growth.' },
+    icon: '🎭',
+  },
+];
+
+export const galleryItems = [
+  { title: { bn: 'ক্যাম্পাস', en: 'Campus' }, image: 'https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&w=900&q=80' },
+  { title: { bn: 'শ্রেণিকক্ষ', en: 'Classroom' }, image: 'https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=900&q=80' },
+  { title: { bn: 'সাংস্কৃতিক অনুষ্ঠান', en: 'Cultural Event' }, image: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=900&q=80' },
+  { title: { bn: 'খেলা', en: 'Sports' }, image: 'https://images.unsplash.com/photo-1517649763962-0c623066013b?auto=format&fit=crop&w=900&q=80' },
+  { title: { bn: 'গ্রন্থাগার', en: 'Library' }, image: 'https://images.unsplash.com/photo-1513258496099-48168024aec0?auto=format&fit=crop&w=900&q=80' },
+  { title: { bn: 'সার্টিফিকেট দায়িত্ব', en: 'Achievement' }, image: 'https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=900&q=80' },
+];
+
+export const noticeCategories = [
+  { value: 'general', label: { bn: 'সাধারণ', en: 'General' } },
+  { value: 'admission', label: { bn: 'ভর্তি', en: 'Admission' } },
+  { value: 'exam', label: { bn: 'পরীক্ষা', en: 'Examination' } },
+  { value: 'event', label: { bn: 'ইভেন্ট', en: 'Event' } },
+];
+
+export const notices = [
+  {
+    id: 'demo-notice-1',
+    title: { bn: 'ভর্তি বিজ্ঞপ্তি (ডেমো)', en: 'Admission Notice (Demo)' },
+    summary: { bn: 'ভর্তি সংক্রান্ত তথ্যের জন্য এই ডেমো নোটিশটি প্রদর্শিত হচ্ছে। এটি অফিসিয়াল বিজ্ঞপ্তি নয়।', en: 'This is a demo notice for admission-related updates. It should be replaced with official content when available.' },
+    date: '2026-11-01',
+    category: 'admission',
+    categoryLabel: { bn: 'ভর্তি', en: 'Admission' },
+    pdfUrl: '#',
+  },
+  {
+    id: 'demo-notice-2',
+    title: { bn: 'পরীক্ষা রুটিন (ডেমো)', en: 'Exam Routine (Demo)' },
+    summary: { bn: 'পরীক্ষার সময়সূচি ও প্রস্তুতি সম্পর্কিত ডেমো কনটেন্ট।', en: 'Demo content covering examination schedule and preparation details.' },
+    date: '2026-10-18',
+    category: 'exam',
+    categoryLabel: { bn: 'পরীক্ষা', en: 'Examination' },
+    pdfUrl: '#',
+  },
+  {
+    id: 'demo-notice-3',
+    title: { bn: 'স্কুল ইভেন্ট (ডেমো)', en: 'School Event (Demo)' },
+    summary: { bn: 'ইভেন্ট ও সাংস্কৃতিক কার্যক্রমের ডেমো আপডেট।', en: 'A placeholder event announcement to demonstrate the notice system.' },
+    date: '2026-10-06',
+    category: 'event',
+    categoryLabel: { bn: 'ইভেন্ট', en: 'Event' },
+    pdfUrl: '#',
+  },
+  {
+    id: 'demo-notice-4',
+    title: { bn: 'সাধারণ নোটিশ (ডেমো)', en: 'General Notice (Demo)' },
+    summary: { bn: 'অফিসিয়াল নোটিশ সামনে আসার আগে এই সাধারণ ডেমো কনটেন্ট দেখা যাবে।', en: 'General placeholder content displayed until official notices are available.' },
+    date: '2026-09-24',
+    category: 'general',
+    categoryLabel: { bn: 'সাধারণ', en: 'General' },
+    pdfUrl: '#',
+  },
+];
+
+export const newsEvents = [
+  {
+    title: { bn: 'চলতি শিক্ষাবর্ষের কার্যক্রম শুরু', en: 'Academic Year Activities Begin' },
+    summary: { bn: 'শিক্ষাবর্ষের নতুন কার্যক্রম ও শিক্ষামূলক উদ্যোগ শুরু হয়েছে।', en: 'The academic year launches with ongoing learning initiatives and orientation.' },
+    date: '2026-11-02',
+  },
+  {
+    title: { bn: 'সাংস্কৃতিক অনুষ্ঠান', en: 'Cultural Program' },
+    summary: { bn: 'স্কুলের সাংস্কৃতিক কার্যক্রমে শিক্ষার্থীদের অংশগ্রহণের তথ্য।', en: 'Students participate in cultural events and school celebrations.' },
+    date: '2026-10-15',
+  },
+  {
+    title: { bn: 'অভিভাবক সমাবেশ', en: 'Parent Meeting' },
+    summary: { bn: 'শিক্ষা জগতে অভিভাবকদের দৃষ্টি ও মতামতের সমন্বয় সভা।', en: 'A parent engagement session aimed at strengthening communication.' },
+    date: '2026-09-28',
+  },
+  {
+    title: { bn: 'ভর্তি ও তথ্য অধিগ্রহণ', en: 'Admission and Intake Update' },
+    summary: { bn: 'ভর্তি প্রক্রিয়া, শিক্ষার্থীর তথ্য ও আবেদন সম্পর্কিত তথ্য।', en: 'A school update featuring application guidance and intake information.' },
+    date: '2026-09-10',
+  },
+];
+
+export const adminModules = [
+  {
+    title: { bn: 'নোটিশ ম্যানেজমেন্ট', en: 'Notice Management' },
+    description: { bn: 'নোটিশ যোগ, সম্পাদনা, মুছে ফেলা, ডাউনলোড ও ফিল্টারিং।', en: 'Add, edit, delete, and filter notices with document attachments.' },
+  },
+  {
+    title: { bn: 'নিউজ ও ইভেন্টস', en: 'News & Events' },
+    description: { bn: 'স্কুলের সংবাদ, ইভেন্ট ও আপডেট প্রকাশ ও ব্যবস্থাপনা।', en: 'Publish and manage school updates, announcements, and event records.' },
+  },
+  {
+    title: { bn: 'শিক্ষক ও স্টাফ', en: 'Teachers & Staff' },
+    description: { bn: 'কর্মীদের ডেটা, দায়িত্ব, নিয়োগ ও বিবরণ আপডেট।', en: 'Update staff profiles, assignments, and departmental information.' },
+  },
+  {
+    title: { bn: 'ফটো গ্যালারি', en: 'Photo Gallery' },
+    description: { bn: 'স্কুলের ছবি আপলোড, সাজানো ও ক্যাটাগরি পরিচালনা।', en: 'Upload and organize school event and campus photos.' },
+  },
+  {
+    title: { bn: 'একাডেমিক তথ্য', en: 'Academic Information' },
+    description: { bn: 'শ্রেণি, রুটিন, সিলেবাস, পরীক্ষার সময়সূচি ও পরিসংখ্যান আপডেট।', en: 'Manage classes, routines, syllabus, and academic records.' },
+  },
+  {
+    title: { bn: 'ফলাফল ব্যবস্থাপনা', en: 'Result Management' },
+    description: { bn: 'ফলাফল, ভর্তি পরীক্ষার তথ্য ও পাবলিক পরীক্ষার আপডেট প্রকাশ।', en: 'Manage academic outcomes, admission results, and public exam data.' },
+  },
+];
